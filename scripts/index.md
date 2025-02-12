@@ -4,7 +4,7 @@ Some useful scripts for taurex.
 
 ## Bootstrap Exomol
 
-Downloads exomol cross-sections to a folder of you choice for a given molecule.
+Downloads [Exomol](https://www.exomol.com) cross-sections to a folder of you choice for a given molecule.
 
 Requires
 
