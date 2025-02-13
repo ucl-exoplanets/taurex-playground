@@ -244,13 +244,13 @@ load_taurex_venv
 
 ## Environment Variables
 
-You can also store the Multinest directory in a variable like so:
+You can also store the Multinest directory in a variable in your ``~/.bashrc``:
 
 ```bash
 export MULTINEST_LIBDIR=$HOME/MultiNest/lib
 ```
-
-This can make it easier to set the ``LD_LIBRARY_PATH`` in the submission script like so:
+This is much safer than putting it directly in the submission script. 
+This can make it easier to set the ``LD_LIBRARY_PATH`` in the submission script:
 
 ```bash
 export LD_LIBRARY_PATH=$MULTINEST_LIBDIR:$LD_LIBRARY_PATH
