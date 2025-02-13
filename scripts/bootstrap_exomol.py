@@ -16,6 +16,7 @@ molecules = {
 }
 
 
+# From https://blog.shichao.io/2012/10/04/progress_speed_indicator_for_urlretrieve_in_python.html
 def reporthook(count, block_size, total_size):
     global start_time
     if count == 0:
