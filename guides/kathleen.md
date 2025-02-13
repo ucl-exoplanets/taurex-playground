@@ -22,10 +22,10 @@ source /shared/ucl/apps/bin/defmods
 ## Modules
 
 The modules you will need to load are ``mpi4py/3.1.4/gnu-4.9.2``. However
-you'll need to unload the ``compiler`` and ``mpi`` modules first like so:
+you'll need to unload the ``compilers`` and ``mpi`` modules first like so:
 
 ```bash
-module unload mpi compiler
+module unload mpi compilers
 module load mpi4py/3.1.4/gnu-4.9.2
 ```
 
@@ -197,7 +197,7 @@ You can automate some of these steps by putting the loads in bash functions in y
 function load_mpi4py {
     module purge
     module load --silent default-modules
-    module unload mpi compiler
+    module unload mpi compilers
     module load mpi4py/3.1.4/gnu-4.9.2
 }
 ```
