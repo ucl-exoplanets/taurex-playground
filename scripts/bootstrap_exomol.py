@@ -13,6 +13,7 @@ molecules = {
     "SO2": "https://exomol.com/db/SO2/32S-16O2/ExoAmes/32S-16O2__ExoAmes.R15000_0.3-50mu.xsec.TauREx.h5",
     "H2CO": "https://exomol.com/db/H2CO/1H2-12C-16O/AYTY/1H2-12C-16O__AYTY.R15000_0.3-50mu.xsec.TauREx.h5",
     "PH3": "https://exomol.com/db/PH3/31P-1H3/SAlTY/31P-1H3__SAlTY.R15000_0.3-50mu.xsec.TauREx.h5",
+    "HCN": "https://exomol.com/db/HCN/1H-12C-14N/Harris/1H-12C-14N__Harris.R15000_0.3-50mu.xsec.TauREx.h5",
 }
 
 
