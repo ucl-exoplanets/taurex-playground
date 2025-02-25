@@ -38,12 +38,18 @@ def reporthook(count, block_size, total_size):
 
 @click.command()
 @click.option(
-    "--molecule", "-m", multiple=True, type=click.Choice(list(molecules.keys()))
+    "--molecule",
+    "-m",
+    multiple=True,
+    type=click.Choice(list(molecules.keys()) + ["all"]),
 )
 @click.option(
     "--output-dir", "-o", type=click.Path(exists=False, dir_okay=True, file_okay=False)
 )
 def download_exomol_data(molecule, output_dir):
+    if "all" in molecule:
+        molecule = molecules.keys()
+
     for m in molecule:
         print(f"Downloading {m}")
         url = molecules[m]
