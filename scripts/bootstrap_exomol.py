@@ -51,7 +51,7 @@ def download_exomol_data(molecule, output_dir):
         molecule = molecules.keys()
 
     for m in molecule:
-        print(f"Downloading {m}")
+        print(f"\nDownloading {m}")
         url = molecules[m]
         output_dir = pathlib.Path(output_dir)
         filename = url.split("/")[-1]
