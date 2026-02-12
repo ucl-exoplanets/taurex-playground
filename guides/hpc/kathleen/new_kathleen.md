@@ -44,6 +44,7 @@ echo "export MULTINEST_DIR=`pwd`" >> ~/.bashrc
 ```bash 
 cd ~
 mkdir pythonenvs
+cd ./pythonenvs
 uv venv
 uv pip install numba taurex pymultinest mpi4py
 ```
