@@ -1,10 +1,4 @@
 
-# New KAthleen
-
-Assuming a clean bashrc
-
-
-
 ```bash
 ssh <username>@kathleen-ng.rc.ucl.ac.uk
 ```
@@ -37,14 +31,13 @@ cd build
 cmake ..
 make
 cd ../lib
-echo "export MULTINEST_DIR=`pwd`" >> ~/.bashrc
+echo "export MULTINEST_DIR=`pwd` >> ~/.bashrc
 ```
 
 ## Env setup
 ```bash 
 cd ~
 mkdir pythonenvs
-cd ./pythonenvs
 uv venv
 uv pip install numba taurex pymultinest mpi4py
 ```
@@ -73,7 +66,7 @@ module load mpi/intel-oneapi-mpi/2021.14.0/intel-oneapi-2024.2.1
 module load intel-oneapi-mkl/2023.2.0-intel-oneapi-mpi/intel-oneapi-2024.2.1
 
 
-~/pythonenvs/.venv/bin/activate
+source ~/pythonenvs/.venv/bin/activate
 
   
 
