@@ -37,7 +37,7 @@ cd build
 cmake ..
 make
 cd ../lib
-echo "export MULTINEST_DIR=`pwd` >> ~/.bashrc
+echo "export MULTINEST_DIR=`pwd`" >> ~/.bashrc
 ```
 
 ## Env setup
